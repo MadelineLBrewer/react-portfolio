@@ -1,15 +1,16 @@
 import React from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Home from './Home';
-import Header from './Header';
+import Navbar from './Navbar';
 import Footer from './Footer';
+import Home from './Home';
 import Projects from './Projects';
 import Experience from './Experience';
+import Contact from './Contact';
 
 function App() {
   return (
     <div> 
-  <Header />
+  <Navbar />
   
 
     <Router>
@@ -17,6 +18,7 @@ function App() {
     <Route path="/" element={<Home />} />
     <Route path="/projects" element={<Projects />} />
     <Route path="/experience" element={<Experience />} />
+    <Route path="/contact" element={<Contact />} />
     </Routes>
     </Router>
 
