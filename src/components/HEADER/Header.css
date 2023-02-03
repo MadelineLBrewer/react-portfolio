@@ -1,6 +1,7 @@
-.header-logo {
-    height: var(--unit3);
-  }
+.header-logo{
+  width: 4rem;
+  padding-right: 1em;
+}
   
   #mobile-nav {
     display: flex;

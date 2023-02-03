@@ -17,7 +17,6 @@ body{
 footer{
     position: absolute;
     text-align: center;
-    bottom: 0;
     width: 100%;
     height: 2.5rem;
 }
@@ -29,6 +28,140 @@ footer p{
 /* Homepage */
 
 #home{
-    text-align: center;
     margin-top: 3em;
 }
+
+.introduction{
+  margin: 7rem 3.5rem;
+  color: #0AA;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-box {
+    flex-grow: 1;
+    position: relative;
+  }
+  
+  .content-col {
+    fill: white;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .content-col::before {
+    content: "";
+    position: absolute;
+    background: var(--siteBackground);
+    height: 100%;
+    width: 50vw;
+    right: 50%;
+  }
+
+.whole{
+    width: 100%;
+}  
+
+.md-half{
+    object-fit: cover;
+    transform: translateY(0px);
+    filter: blur(0px) opacity(0.9);
+    position: fixed;
+    bottom: 0px;
+    height: 100vh;
+    right: 0px;
+    overflow: hidden;
+    place-self: center;
+    transition: width 0.5s ease 0s;
+    will-change: width;
+}
+
+@media only screen and (min-width: 768px){
+    .md-half {
+        width: 50%;
+    }
+}
+
+.mel-img {
+    position: fixed;
+    /* bottom: 0; */
+    height: 70%;
+    width: auto;
+    right: 0;
+    min-height: 400px;
+    transition: all 0.2s ease-out;
+    will-change: all;
+  }
+  
+  @media screen and (min-width: 280px) and (min-height: 653px) {
+    .mel-img {
+      height: 70%;
+      right: -10%;
+    }
+  }
+  
+  @media screen and (min-width: 375px) and (min-height: 667px) {
+    .mel-img {
+      height: 75%;
+      right: -5%;
+    }
+  }
+  
+  @media screen and (min-width: 390px) and (min-height: 844px) {
+    .mel-img {
+      height: 80%;
+      right: -15%;
+    }
+  }
+  
+  @media screen and (min-width: 414px) and (min-height: 896px) {
+    .mel-img {
+      right: -10%;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .content-box {
+      flex-grow: unset;
+    }
+  
+    .mel-img {
+      right: unset;
+      left: 40%;
+    }
+  }
+  
+  @media screen and (min-width: 880px) {
+    .mel-img {
+      left: 55%;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) and (min-height: 600px) {
+    .mel-img {
+      left: 60%;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) and (min-height: 1366px) {
+    .mel-img {
+      left: 40%;
+    }
+  }
+  
+  @media screen and (min-width: 1280px) and (min-height: 800px) {
+    .content-box {
+      flex-grow: unset;
+    }
+  
+    .mel-img {
+      height: 80%;
+    }
+  }
+
+  .about{
+    position: relative;
+    z-index: 0;
+    background-color: #ccc;
+  }

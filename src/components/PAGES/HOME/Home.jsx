@@ -5,6 +5,8 @@ import { faMapPin } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedinIn, faGithub, faCodepen } from '@fortawesome/free-brands-svg-icons';
 import "./Home.css";
 import { Helmet } from "react-helmet";
+import CCBG from "./cross-campus-bg.png";
+import Mel from "./madelinebrewblue.png";
 
 const Home = () => {
 
@@ -31,8 +33,6 @@ const Home = () => {
 <Helmet>
   <title>Madeline Brewer</title>
 </Helmet>
-
-
 <section
         className="hero flex-end"
         style={{
@@ -41,7 +41,7 @@ const Home = () => {
       >
         <section className="content-col flex md-two-columns">
           <div className="absolute md-relative md-order1 whole h100 flex-vertical relative bg-white">
-            {/* <img
+            <img
               className="whole md-half"
               style={{
                 objectFit: "cover",
@@ -61,18 +61,18 @@ const Home = () => {
               src={CCBG} //background image for pic
               width="100%"
               height="auto"
-            /> */}
-            {/* <img
-              className="chuck-img"
-              src="../../../COMPONENTS/HOME/madelinebrew.png" //picture of me layered on top
-              alt="chuck"
+            />
+            <img
+              className="mel-img"
+              src={Mel} //picture of me layered on top
+              alt="madeline"
               style={{
                 transform: `translateY(${-scrollY / 4}px)`,
                 filter: `blur(${scrollY / 128}px) `,
               }}
-            /> */}
+            />
           </div>
-          <div className="flex-vertical flex-start md-flex-center-x py2 lg-ml3">
+          <div className="introduction">
             <div
               className="content-box flex-vertical"
               style={{
@@ -96,19 +96,23 @@ const Home = () => {
             </div>
             <div>
               <label>Links:</label>
+              <br />
               <a href="https://www.linkedin.com/in/madeline-brewer-7118a8240/">
-    <FontAwesomeIcon icon={faLinkedinIn} /></a>
-    <a href="https://github.com/MadelineLBrewer">
-    <FontAwesomeIcon icon={faGithub} /></a>
-    <a href="https://codepen.io/Mellybrew/">
-    <FontAwesomeIcon icon={faCodepen} /></a>
+                <FontAwesomeIcon icon={faLinkedinIn} />
+              </a>
+              <a href="https://github.com/MadelineLBrewer">
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+              <a href="https://codepen.io/Mellybrew/">
+                <FontAwesomeIcon icon={faCodepen} />
+              </a>
             </div>
           </div>
         </section>
       </section>
       <section className="hero bg-default">
       <section className="py4 one-column lg-two-columns gap3 xl-gap4">
-          <div>
+          <div id="about">
           <label>About Me:</label>
             <h3 className="mb1">3x Impact</h3>
             <p>

@@ -1,5 +1,7 @@
 import React from "react";
 import "./nav.css";
+import { Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import NavLogo from "../../../LOGO/MB-logo.png"
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -27,15 +29,15 @@ function NavContent() {
 
       <li>
         <a
-          href="https://calendly.com/interview-chuck-howard/30-minutes"
+          href="https://calendly.com/madelinebrewer/30min"
           target="_blank"
           rel="noreferrer"
         >
 
-          <button className="green">
+          <Button variant="success">
             <FontAwesomeIcon icon={faCalendar} />
             &nbsp;&nbsp;Schedule Interview
-          </button>
+          </Button>
         </a>
       </li>
     </ul>
@@ -55,9 +57,9 @@ class Nav extends React.Component {
             borderRadius: "var(--unit3)",
             gap: "var(--unit0)",
           }}
-          className="flex-center-y"
+          className="d-flex"
         >
-          <Link to="/" className="flex flex-center-y">
+          <Link to="/" className="">
           <img 
           className="header-logo"
           src={NavLogo} 
@@ -66,7 +68,7 @@ class Nav extends React.Component {
           </Link>
 
           <div
-            className="flex-vertical"
+            className="mt-2"
             style={{ color: "var(--transBlueC-50)" }}
           >
             <label>Status:</label>

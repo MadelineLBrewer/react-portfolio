@@ -8,6 +8,8 @@ nav{
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 nav h1{
@@ -31,6 +33,9 @@ nav a {
   align-items: center;
 }
 
+.status{
+  padding-left: .5em;
+}
 
 /* Charlie's css */
   
