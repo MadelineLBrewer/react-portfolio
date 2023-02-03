@@ -1,0 +1,17 @@
+.feedback {
+    display: unset;
+    position: fixed;
+    top: 50%;
+    right: 0;
+      transform: rotate(-90deg) translateY(38px);
+  }
+  
+  .feedback a button {
+    background: var(--transWhite-50) !important;
+    backdrop-filter: blur(3px);
+    border-radius: var(--unit1) var(--unit1) 0 0!important;
+  }
+  
+  .feebback a button:hover {
+    transform-origin: bottom;
+  }
