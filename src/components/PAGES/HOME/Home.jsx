@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapPin } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedinIn, faGithub, faCodepen } from '@fortawesome/free-brands-svg-icons';
+import { faMapPin, faWrench, faCode } from '@fortawesome/free-solid-svg-icons';
+import SocialIcons from '../../SocialIcons';
 import "./Home.css";
 import { Helmet } from "react-helmet";
 import CCBG from "./cross-campus-bg.png";
@@ -79,7 +79,9 @@ const Home = () => {
                 textTransform: "none",
               }}
             >
-              <h1 style={{ textTransform: "none", lineHeight: 1 }}>
+              <h1 
+              style={{ textTransform: "none", lineHeight: 1 }}
+              >
                 Madeline
                 <br />
                 Brewer
@@ -94,18 +96,10 @@ const Home = () => {
                 </small>
               </div>
             </div>
-            <div>
+            <div className='links'>
               <label>Links:</label>
               <br />
-              <a href="https://www.linkedin.com/in/madeline-brewer-7118a8240/">
-                <FontAwesomeIcon icon={faLinkedinIn} />
-              </a>
-              <a href="https://github.com/MadelineLBrewer">
-                <FontAwesomeIcon icon={faGithub} />
-              </a>
-              <a href="https://codepen.io/Mellybrew/">
-                <FontAwesomeIcon icon={faCodepen} />
-              </a>
+              <SocialIcons />
             </div>
           </div>
         </section>
@@ -116,10 +110,46 @@ const Home = () => {
           <label>About Me:</label>
             <h3 className="mb1">3x Impact</h3>
             <p>
-              I'm a <i>Web Developer</i> with experience in{" "}
-              <i>Frontend Development</i> and <i>Product Discovery</i> who can
-              lead a product from the point of discovery, through the design
-              phase, and on to deployment.
+              I'm a <i>Full Stack Web Developer</i> with experience in{" "}
+              <i>Frontend Development</i> and <i>Backend Development</i> who can
+            create and maintain websites and mobile applications, and on to deployment.
+            </p>
+
+            <div className='disciplines'>
+            <div className="flex-center">
+            <div className='discipline' style={{ background: "rgba(255, 96, 96, 0.30)" }}>
+                <h6>
+                  <FontAwesomeIcon icon={faCode} />
+                  Front-end Development
+                </h6>
+                </div>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Javascript</li>
+                  <li>React</li>
+                </ul>
+              </div>
+              <div className="flex-center">
+              <div className='discipline' style={{ background: "rgba(0, 206, 89, 0.30)" }}>
+                <h6>
+                  <FontAwesomeIcon icon={faWrench} />
+                  Back-end Development
+                </h6>
+                </div>
+                <ul>
+                  <li>SQL</li>
+                  <li>NoSQL</li>
+                  <li>REST APIs</li>
+                </ul>
+              </div>
+            </div>
+
+            <p>
+             **edit**I'm actively searching for full-time role on a remote team in
+              emerging technology with a small or medium sized company where I
+              can collaborate with awesome people, combine my skills and make an
+              impact.
             </p>
 
           </div>

@@ -1,29 +1,27 @@
 import React, { Component } from "react";
-import LinkedIn from "../IMG/SOCIAL/svg/linkedin-01.svg";
-import Codepen from "../IMG/SOCIAL/svg/codepen-01.svg";
-import StackOverflow from "../IMG/SOCIAL/svg/stack-overflow-01.svg";
-import Github from "../IMG/SOCIAL/svg/github-01.svg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedinIn, faGithub, faCodepen, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
 import "./SocialIcons.css";
 
 class SocialIcons extends Component {
   render() {
     return (
-      <div className="social-icons flex text-white" style={{ gap: "var(--unit2)" }}>
-        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/chuck-howard/">
-          <img src={LinkedIn} alt="LinkedIn" />
+      <div className="social-icons text-white" style={{ gap: "var(--unit2)" }}>
+        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/madeline-brewer-7118a8240/">
+          <FontAwesomeIcon icon={faLinkedinIn} alt="LinkedIn"/>
         </a>
-        <a target="_blank" rel="noreferrer" href="https://codepen.io/chulps">
-          <img src={Codepen} alt="Codepen" />
+        <a target="_blank" rel="noreferrer" href="https://codepen.io/Mellybrew">
+          <FontAwesomeIcon icon={faCodepen} alt="Codepen" />
         </a>
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://stackoverflow.com/users/2146031/chulps"
+          href="https://stackoverflow.com/users/19140387/madeline-brewer"
         >
-          <img src={StackOverflow} alt="stackoverflow" />
+          <FontAwesomeIcon icon={faStackOverflow} alt="StackOverflow"/>
         </a>
-        <a target="_blank" rel="noreferrer" href="https://github.com/chulps">
-          <img src={Github} alt="github" />
+        <a target="_blank" rel="noreferrer" href="https://github.com/MadelineLBrewer">
+          <FontAwesomeIcon icon={faGithub} alt="Github" />
         </a>
       </div>
     );

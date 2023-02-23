@@ -2,9 +2,10 @@
     transform: scale(1);
     transition: 0.15s;
     position: relative;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
+    padding-right: 1em;
   }
   
   .social-icons a::before {
