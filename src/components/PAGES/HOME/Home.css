@@ -188,7 +188,7 @@ footer p{
     margin-top: var(--unit2);
   }
   
-  .disciplines h6 {
+  .disciplines h4 {
     height: calc(var(--unit4));
     width: calc(var(--unit4));
     border-radius: var(--unit4) !important;
@@ -202,7 +202,7 @@ footer p{
   }
 
   .discipline{
-    height: 75px;
-    width: 150px;
+    height: 125px;
+    width: 200px;
     border-radius: 12px;
   }

@@ -1,0 +1,37 @@
+#jcaa{
+    max-width: 1500px;
+    margin: 3.5em auto;
+    font-size: 125%;
+    line-height: 200%;
+}
+
+.col{
+    padding: 1.5em;
+}
+
+section{
+    width: 95%;
+}
+
+.jcaalogo{
+    height: 250px;
+    display: flex;
+    /* justify-content: center; */
+}
+
+.cinderella{
+    display: inline-block;
+    width: 45%;
+    height: 100px;
+}
+
+.rapunzel{
+    display: inline-block;
+    width: 50%;
+    margin-top: 1rem;
+    /* height: auto; */
+}
+
+.princess{
+    margin-top: 2.5rem;;
+}

@@ -19,8 +19,13 @@
   }
   
 .project{
-  background-color: pink;
+  background-color: #ddd;
   margin: 1em 0;
+  height: 200px;
+  width: 15vw;
+  border: black solid 3px;
+  border-radius: 12px;
+  text-align: center;
 }
 
   /* .projects-section > div > a:hover {

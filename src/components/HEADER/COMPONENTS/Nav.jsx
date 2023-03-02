@@ -2,7 +2,7 @@ import React from "react";
 import "./nav.css";
 import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavLogo from "../../../LOGO/MB-logo.png"
+import NavLogo from "../../../LOGOS/MB-logo.png"
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserTie, faCalendar } from '@fortawesome/free-solid-svg-icons';
@@ -21,7 +21,7 @@ function NavContent() {
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://resume.io/r/gEFMf2bm4"
+          href="https://resume.io/r/unpd5I2cB"
         >
           Resumé
         </a>

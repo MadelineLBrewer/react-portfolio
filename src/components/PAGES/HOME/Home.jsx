@@ -118,10 +118,10 @@ const Home = () => {
             <div className='disciplines'>
             <div className="flex-center">
             <div className='discipline' style={{ background: "rgba(255, 96, 96, 0.30)" }}>
-                <h6>
+                <h4>
                   <FontAwesomeIcon icon={faCode} />
-                  Front-end Development
-                </h6>
+                  Front-end Development Tools
+                </h4>
                 </div>
                 <ul>
                   <li>HTML</li>
@@ -132,10 +132,10 @@ const Home = () => {
               </div>
               <div className="flex-center">
               <div className='discipline' style={{ background: "rgba(0, 206, 89, 0.30)" }}>
-                <h6>
+                <h4>
                   <FontAwesomeIcon icon={faWrench} />
-                  Back-end Development
-                </h6>
+                  Back-end Development Tools
+                </h4>
                 </div>
                 <ul>
                   <li>SQL</li>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import JcaaLogo from './PAGES/JCAA/JcaaLogo.png';
+import JcaaLogo from "../LOGOS/JcaaLogo.png";
 import "./Projects.css";
 
 function Projects(){
@@ -16,13 +16,12 @@ function Projects(){
 
           <h3>My work:</h3>
           <p>My projects since 2022.</p>
-          <div className="one-column sm-two-columns lg-four-columns gap2">
+          <div >
 
            <div className="project">
            <h2>JCAA Website</h2>
            <Link to="/jcaa/">
-              {/* <JcaaLogo /> */}
-              <img src="../PAGES/JCAA/JcaaLogo.png" alt="JCAA"></img>
+              <img src={JcaaLogo} alt="JCAA"></img>
             </Link>
             </div>
 
