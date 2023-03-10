@@ -89,7 +89,7 @@ const Home = () => {
               <p>Web Developer</p>
               <div className="mb3">
                 <small className="mb3" style={{ lineHeight: 1 }}>
-                  <span className="mr0 text-red0">
+                  <span className="mapPin">
                     <FontAwesomeIcon icon={faMapPin} />
                   </span>
                  Denver,&nbsp;CO
@@ -104,57 +104,77 @@ const Home = () => {
           </div>
         </section>
       </section>
-      <section className="hero bg-default">
-      <section className="py4 one-column lg-two-columns gap3 xl-gap4">
+      
+      <section>
           <div id="about">
-          <label>About Me:</label>
-            <h3 className="mb1">3x Impact</h3>
+          <h4>About Me:</h4>
             <p>
-              I'm a <i>Full Stack Web Developer</i> with experience in{" "}
-              <i>Frontend Development</i> and <i>Backend Development</i> who can
-            create and maintain websites and mobile applications, and on to deployment.
+              I'm a <i>Front End Web Developer</i> with experience in{" "}
+              <i> Development</i> and <i>Design</i> who can
+            create and maintain websites and mobile applications, from conception, and on to deployment.
+            
+             I'm actively searching for full-time role with a progressive company where I can utilize my skills and experiences to contribute to the development of cutting-edge web applications.
             </p>
 
-            <div className='disciplines'>
-            <div className="flex-center">
-            <div className='discipline' style={{ background: "rgba(255, 96, 96, 0.30)" }}>
+            {/* <div className='disciplines'>
+            <div>
+            <div className='discipline' style={{ background: "rgba(0, 206, 89, 0.30)" }}>
                 <h4>
                   <FontAwesomeIcon icon={faCode} />
-                  Front-end Development Tools
+                  Technical Skills
                 </h4>
                 </div>
                 <ul>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>Javascript</li>
+                  <li>HTML5, CSS3, JavaScript</li>
                   <li>React</li>
+                  <li>Bootstrap</li>
+                  <li>SASS</li>
+                  <li>jQuery</li>
+                  <li>Git</li>
+                  <li>DOM Manipulation</li>
+                  <li>Node.js</li>
                 </ul>
               </div>
               <div className="flex-center">
               <div className='discipline' style={{ background: "rgba(0, 206, 89, 0.30)" }}>
                 <h4>
                   <FontAwesomeIcon icon={faWrench} />
-                  Back-end Development Tools
+                  Other Skills
                 </h4>
                 </div>
                 <ul>
-                  <li>SQL</li>
-                  <li>NoSQL</li>
-                  <li>REST APIs</li>
+                  <li>Detail Oriented</li>
+                  <li>Problem Solving</li>
+                  <li>Teamwork</li>
+                  <li>Communication</li>
+                  <li>Time Management</li>
                 </ul>
               </div>
-            </div>
+            </div> */}
 
+          
+
+
+
+          <section className="one-column pb3">
+          <div>
+            <h4 className="mb0">Development Tools:</h4>
             <p>
-             **edit**I'm actively searching for full-time role on a remote team in
-              emerging technology with a small or medium sized company where I
-              can collaborate with awesome people, combine my skills and make an
-              impact.
+              I use these tools to create design systems and reusable components
+              so that I can quickly build prototypes at the highest fidelity.
             </p>
-
+            <div className="development-tools py1">
+              <small>HTML</small>
+              <small>CSS</small>
+              <small>Javascript</small>
+              <small>Sass</small>
+              <small>React</small>
+              <small>Github</small>
+            </div>
           </div>
+          </section>
+        </div>
         </section>
-      </section>
     </div>
   )
 };

@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Row, Col } from "react-bootstrap";
 import JcaaLogo from "../LOGOS/JcaaLogo.png";
 import "./Projects.css";
 
@@ -18,19 +20,22 @@ function Projects(){
           <p>My projects since 2022.</p>
           <div >
 
-           <div className="project">
-           <h2>JCAA Website</h2>
+<Row>
+           <div className="project col-md-3 col-sm-6">
+           
            <Link to="/jcaa/">
               <img src={JcaaLogo} alt="JCAA"></img>
             </Link>
             </div>
 
-            {/* <div className="project">
+            <div className="project col-md-3 col-sm-6">
          <h2>Keeper App</h2>
-         <p>A note-taking app built with a React front-end.</p>
-    </div> */}
+    </div>
             
-
+    <div className="project col-md-3 col-sm-6">
+         <h2>Keeper App</h2>
+    </div>
+</Row>
           </div>
         </section>
       </section>

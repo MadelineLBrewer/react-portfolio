@@ -2,7 +2,7 @@ import React from "react";
 import "./nav.css";
 import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavLogo from "../../../LOGOS/MB-logo.png"
+import NavLogo from "../../../LOGOS/MBLOGO.png"
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserTie, faCalendar } from '@fortawesome/free-solid-svg-icons';
@@ -10,8 +10,6 @@ import { faUserTie, faCalendar } from '@fortawesome/free-solid-svg-icons';
 function NavContent() {
   return (
     <ul className="flex-center flex-vertical md-flex-horizontal">
-      <li className="md-ghost">
-      </li>
 
       <li>
         <a href="#projects">Projects</a>
@@ -67,15 +65,15 @@ class Nav extends React.Component {
           />
           </Link>
 
-          <div
+          {/* <div
             className="mt-2"
             style={{ color: "var(--transBlueC-50)" }}
           >
             <label>Status:</label>
-            <small
-              className="status px1"
+            <div
+              className="status"
               style={{
-                borderRadius: "var(--unit1)",
+                borderRadius: "12px",
                 color: "var(--transBlueC-75)",
               }}
             >
@@ -83,8 +81,8 @@ class Nav extends React.Component {
               <FontAwesomeIcon icon={faUserTie} />
               </span>
               Interviewing&nbsp;now
-            </small>
-          </div>
+            </div>
+          </div> */}
         </div>
 
         {/* button */}

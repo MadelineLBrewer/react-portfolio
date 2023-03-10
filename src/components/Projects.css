@@ -1,5 +1,7 @@
 #projects{
-  background-color: #eee;
+  /* background-color: #eee; */
+  background-color: #F6F6F2;
+  color: #388087;
   padding: 2em 4em;
   font-size: 150%;
   position: relative;
@@ -7,7 +9,7 @@
 
 .projects-section > div > a {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     background: var(--transWhite-50);
@@ -19,13 +21,17 @@
   }
   
 .project{
-  background-color: #ddd;
-  margin: 1em 0;
+  background-color: #eee;
+  color: #388087;
+  /* background-color: #BADFE7; */
+  margin: 1em .5em;
   height: 200px;
-  width: 15vw;
-  border: black solid 3px;
+  /* width: 25vw; */
+  border: #388087 solid 3px;
   border-radius: 12px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
   /* .projects-section > div > a:hover {
