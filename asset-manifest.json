@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.4fd285bd.css",
+    "main.js": "/react-portfolio/static/js/main.79d88a4f.js",
+    "static/media/cross-campus-bg.png": "/react-portfolio/static/media/cross-campus-bg.47f430aaa86f730d60d3.png",
+    "static/media/madelinebrewblue.png": "/react-portfolio/static/media/madelinebrewblue.bbe0ef93e5be818a758c.png",
+    "static/media/JcaaLogo.png": "/react-portfolio/static/media/JcaaLogo.9874b2458fd86a708d8e.png",
+    "static/media/MBLOGO.png": "/react-portfolio/static/media/MBLOGO.3bdcbcc7d05a930ddc85.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.4fd285bd.css.map": "/react-portfolio/static/css/main.4fd285bd.css.map",
+    "main.79d88a4f.js.map": "/react-portfolio/static/js/main.79d88a4f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4fd285bd.css",
+    "static/js/main.79d88a4f.js"
+  ]
+}
